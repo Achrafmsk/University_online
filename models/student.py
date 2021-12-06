@@ -1,5 +1,6 @@
 from odoo import models, fields,api,_
 from odoo.exceptions import ValidationError
+from datetime import datetime
 import re
 
 # self.env.user.has_group('base.group_user') # Check for Internal User
@@ -42,7 +43,7 @@ class UniversityStudent(models.Model):
     rue = fields.Char('Rue')
     ville = fields.Char('Ville')
     code_postale = fields.Char('Code postale')
-
+    date=fields.Date(default=datetime.today())
 
     date_inscription = fields.Datetime(string='Date Inscription' , default=fields.Datetime.now, readonly=True)
     date_paiement = fields.Datetime(string='Date Prochain Paiement', default=fields.Datetime.now)
