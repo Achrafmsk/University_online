@@ -68,9 +68,9 @@
 
                 <sheet>
                     <div class="oe_title">
-                        <h1>
-                            <field name="reference"/>
-                        </h1>
+<!--                        <h1>-->
+<!--                            <field name="reference"/>-->
+<!--                        </h1>-->
                     </div>
                     <group string="Personal Information">
                         <field name="identity_card"/>
@@ -86,6 +86,9 @@
                         <field name="e_mail"/>
                         <field name="phone"/>
                     </group>
+                      <group>
+                         <field name="subject_id"/>
+                    </group>
                     <notebook>
                         <page string="Adresse" name="information">
                             <group>
@@ -99,14 +102,10 @@
                                 <field name="suggestions"/>
                             </group>
                         </page>
-                        <page string="Students" name="students">
+
+                        <page string="Classes" name="classe">
                             <group>
-                                <field name="student_ids"/>
-                            </group>
-                        </page>
-                        <page string="Departments" name="departments">
-                            <group>
-                                <field name="departments_ids"/>
+                                <field name="class_ids"/>
                             </group>
                         </page>
                     </notebook>
@@ -151,8 +150,11 @@
     <menuitem id="teacher_menu_root"
               name="Teachers"
               parent="university_menu_root"
-              action="teacher_action_window"
               sequence="10"/>
 
-
+    <menuitem id="teacher_menu"
+              name="Teachers"
+              parent="teacher_menu_root"
+              action="teacher_action_window"
+              sequence="10"/>
 </odoo>

@@ -7,8 +7,8 @@
             <field name="name">teacher card</field>
             <field name="model">university.teacher</field>
             <field name="report_type">qweb-pdf</field>
-            <field name="report_name">University_online.report_teacher_card</field>
-            <field name="report_file">University_online.report_teacher_card</field>
+            <field name="report_name">university_managment.report_teacher_card</field>
+            <field name="report_file">university_managment.report_teacher_card</field>
             <field name="binding_model_id" ref="model_university_teacher"/>
             <field name="binding_type">report</field>
         </record>

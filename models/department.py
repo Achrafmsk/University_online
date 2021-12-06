@@ -10,7 +10,8 @@ class UniversityDepartment(models.Model):
     director = fields.Char('Director', tracking=True)
     discipline = fields.Char('Discipline', tracking=True)
     date = fields.Date('Date of creation')
-    department_id = fields.Many2one(comodel_name='university.teacher', string='departments')
+    professor_ids = fields.One2many(comodel_name='university.teacher', inverse_name='departments_id')
+    subject_ids = fields.One2many(comodel_name='university.subject', inverse_name='departments_id')
 
 
     reference = fields.Char(string='department reference', required=True, copy=False, readonly=True,

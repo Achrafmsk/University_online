@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "University",
+    'name': "University_managment",
     'sequence': '-100',
     'description': """
         gestion de l'université (etudiants, enseignants, matières ... etc)
@@ -9,27 +9,30 @@
 
     'category': 'Uncategorized',
     'version': '0.1',
-    'depends': [
-        'mail',
-    ],
-
+    'depends': ['base', 'mail', 'website'],
+    'sequence': '-100',
     'data':
         [
             'security/security.xml',
             'security/ir.model.access.csv',
             'data/sequences.xml',
-        #    'wizards/teacher_grade.xml',
-            'report/report_teacher.xml',
-            'report/template_teacher.xml',
+            'data/cron.xml',
+            'data/mail_template.xml',
+            #    'wizards/teacher_grade.xml',
+            #   'report/report_teacher.xml',
+            #   'report/template_teacher.xml',
             'report/report_student.xml',
             'report/template_student.xml',
-            'report/report_department.xml',
-            'report/template_department.xml',
+            #   'report/report_department.xml',
+            #   'report/template_department.xml',
+            'views/website.xml',
             'views/university_view.xml',
+            'views/seance_view.xml',
+            'views/emploi_view.xml',
             'views/teacher_view.xml',
             'views/student_view.xml',
-            'views/department_view.xml',
-
+            'views/class_view.xml',
+            'views/subject_view.xml',
 
         ],
 

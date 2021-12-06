@@ -69,6 +69,17 @@
                         <field name="discipline"/>
                         <field name="date"/>
                     </group>
+                     <notebook>
+                         <page string="Professeurs" name="professeurs">
+                            <group>
+                                <field name="professor_ids"/>
+                            </group>
+                        </page> <page string="Matieres" name="matiere">
+                            <group>
+                                <field name="subject_ids"/>
+                            </group>
+                        </page>
+                    </notebook>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids"/>
@@ -106,9 +117,12 @@
 
     <menuitem id="department_menu_root"
               name="Departments"
-              parent="University_online.university_menu_root"
-              action="department_action_window"
+              parent="university_managment.university_menu_root"
               sequence="10"/>
 
-
+    <menuitem id="department_menu"
+              name="Departments"
+              parent="department_menu_root"
+              action="department_action_window"
+              sequence="10"/>
 </odoo>
