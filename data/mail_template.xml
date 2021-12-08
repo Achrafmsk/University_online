@@ -13,7 +13,7 @@
                     <p style="margin: 0px; padding: 0px; font-size: 13px;text-align: justify;letter-spacing: 1px;">
                         Cher(ère) etudiant(e): <b>${object.f_name}</b>
                         <br /><br />
-                        Nous vous addressons cet e-mail afin de vous informer que vous étiez inscrits au <b>${object.class_id.class_name}</b> le
+                        Nous vous addressons cet e-mail afin de vous informer que vous êtes désormais inscrits au <b>${object.class_id.class_name}</b> le
                         ${object.date_inscription}, vous trouverez ci joint votre carte d'étudiant ainsi que l'attestation d'inscription.
                         <br/><br /><br />
                         on vous souhaite une excellente formation.
