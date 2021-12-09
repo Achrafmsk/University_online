@@ -59,13 +59,7 @@
 
                         <page string="Etudiants" name="etudiants">
                             <group>
-                                <field name="student_ids">
-                                    <tree editable="bottom">
-
-
-                                    </tree>
-
-                                </field>
+                                <field name="student_ids"/>
                             </group>
                         </page>
                          <page string="Professeurs" name="professeurs">

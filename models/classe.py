@@ -4,7 +4,7 @@ class UniversityClass(models.Model):
     _name = 'university.class'
     _rec_name = 'class_name'
     _inherit = ['mail.thread','mail.activity.mixin',]
-    _description = 'Gestion Classe'
+    _description = 'Gestion de classes'
 
     reference = fields.Char(string='class reference', required=True, copy=False, readonly=True,
                         default=lambda self: _('New'))
