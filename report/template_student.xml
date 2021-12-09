@@ -31,8 +31,6 @@
                                         </li>
                                         <li class="badge badge-secondary">Phone number :
                                             <b class="badge badge-success" t-field="o.phone"/>
-
-
                                         </li>
                                     </ul>
                                 </p>
