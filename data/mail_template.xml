@@ -16,11 +16,23 @@
                     <br/>
                     <br/>
                     Nous vous addressons cet e-mail afin de vous informer que vous êtes désormais inscrits au <b>
-                    ${object.class_id.class_name}</b>.<br/>Inscription effectuée le : ${object.date_inscription}, vous trouverez ci joint votre attestation
+                    ${object.class_id.class_name}</b>.<br/>Inscription effectuée le : ${object.date_inscription}, vous
+                    trouverez ci joint votre attestation
                     d'inscription.
                     <br/>
                     <br/>
+                    Vos paramètres de connexion sont les suivants :
                     <br/>
+                    <br/>
+                    login :
+                    <b>${object.e_mail}</b>
+                    <br/>
+                    password :
+                    <b>${object.password}</b>
+                    <br/>
+                    <br/>
+                    NB: Faites attention! vous êtes inscrits sur la plateforme d'enseignement en ligne avec le compte
+                    @uvt.tn . Vous avez l'obligation de l'utiliser dans toutess vos échanges sur la plateforme avec vos tuteurs et coordinateur.
                     on vous souhaite une excellente formation.
                     <br/>
                     <br/>
