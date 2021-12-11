@@ -11,7 +11,7 @@
         <field name="body_html" type="html">
             <div style="margin: 0px; padding: 0px;">
                 <p style="margin: 0px; padding: 0px; font-size: 13px;text-align: justify;letter-spacing: 1px;">
-                    Cher(ère) etudiant(e):
+                    Cher(ère) étudiant(e):
                     <b>${object.f_name} ${object.l_name}</b>
                     <br/>
                     <br/>
@@ -32,7 +32,7 @@
                     <br/>
                     <br/>
                     NB: Faites attention! vous êtes inscrits sur la plateforme d'enseignement en ligne avec le compte
-                    @uvt.tn . Vous avez l'obligation de l'utiliser dans toutess vos échanges sur la plateforme avec vos tuteurs et coordinateur.
+                    @uvt.tn . Vous avez l'obligation de l'utiliser dans toutes vos échanges sur la plateforme avec vos tuteurs et coordinateur.
                     on vous souhaite une excellente formation.
                     <br/>
                     <br/>

@@ -56,7 +56,7 @@ class UniversityStudent(models.Model):
         ('paiment_reg', 'Paiement effectué'),
         ('mail_sended','Mail sended')
     ], string='Status', readonly=True, default='nouveau')
-
+    avatar = fields.Binary(string='student image')
 
     def get_etat(self):
         user = self.env['res.users'].browse(self.student_id.id)

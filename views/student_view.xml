@@ -64,6 +64,7 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+
                     <header>
 
                         <button name="action_en_attente" type="object" attrs="{'visible':[('state','=','mail_sended')]}" string="En attente"
@@ -89,7 +90,7 @@
                     </header>
 
                     <group string="Personal Information">
-
+                        <field name="avatar" widget="image" class="oe_avatar" />
                         <field name="f_name"/>
                         <field name="l_name"/>
                         <field name="identity_card"/>
